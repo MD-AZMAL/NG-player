@@ -1,0 +1,5 @@
+<div class="row">
+    <div class="col" *ngFor="let song of songs">
+        <app-audio [sound]="song" (click)="onClick(song)"></app-audio>
+    </div>
+</div>

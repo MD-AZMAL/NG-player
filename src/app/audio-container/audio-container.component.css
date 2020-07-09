@@ -1,0 +1,11 @@
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.col:not(:last-child) {
+    margin-right: 30px;
+}

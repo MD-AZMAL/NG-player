@@ -1,0 +1,34 @@
+
+.audio {
+    border: 5px solid white;
+    height: 550px;
+    transition: all .3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.audio img {
+    height: 100%;
+    transition: filter .4s ease;
+}
+
+.audio img.paused {
+    filter: grayscale(100%) blur(5px);
+}
+
+.audio:hover {
+    transform: scale(1.02);
+}
+
+.audio:hover img.paused {
+    filter: grayscale(70%) blur(0px);
+}
+
+.control-icons {
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

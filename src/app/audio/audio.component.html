@@ -1,0 +1,9 @@
+<div class="audio">
+    <img src={{sound.img}} alt="val" [class.paused]="sound.play === false">
+    <div *ngIf="sound.play === true" class="control-icons">
+        <fa-icon [icon]="faPauseIcon"></fa-icon>
+    </div>
+    <div *ngIf="sound.play === false" class="control-icons">
+        <fa-icon [icon]="faPlayIcon"></fa-icon>
+    </div>
+</div>
