@@ -19,7 +19,7 @@ export class AudioContainerComponent implements OnInit {
   onClick(song): void {
     this.songs
         .filter(curr => curr != song)
-        .forEach(song => {song.howl.pause(); song.play = false})
+        .forEach(song => {song.howl.stop(); song.play = false})
     
     if(song.play) {
       song.howl.stop();
