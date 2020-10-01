@@ -44,5 +44,16 @@ export const SONGS = [
         name: 'Audio 4',
         img: 'assets/image/img4.jpg',
         play: false
+    },
+    {
+        howl: new Howl({
+            src: ['assets/audio/audio5.mp3'],
+            autoplay: false,
+            loop: true,
+            volume: 0.4,
+            }),
+        name: 'Audio 5',
+        img: 'assets/image/image5.jpg',
+        play: false
     }
 ]
